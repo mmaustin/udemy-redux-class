@@ -7,3 +7,8 @@ const userSchema = new Schema({
     password: String
 })
 
+//create the model class
+export const ModelClass = mongoose.model('user', userSchema);
+
+//export the model
+//export default ModelClass

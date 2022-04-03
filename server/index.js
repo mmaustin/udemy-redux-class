@@ -1,3 +1,5 @@
+//will be using require and module.exports because the class was not taught with ES6 import/export statements
+
 const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
