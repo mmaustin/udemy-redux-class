@@ -1,5 +1,5 @@
-const Authentication = require('./controllers/authentication')
+const Authentication = require('./controllers/authentication.js')
 
 module.exports = function(app){
-    app.post('/signup', Authentication.signup)
+    app.get('/', Authentication.signup)
 }
