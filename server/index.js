@@ -6,6 +6,10 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const app = express();
 router = require('./router.js')
+const mongoose = require('mongoose')
+
+//DB Setup
+mongoose.connect('mongodb://127.0.0.1')
 
 //App Setup
 app.use(morgan('combined'));
