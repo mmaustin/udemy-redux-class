@@ -1,3 +1,3 @@
 exports.signup = function(req, res, next) {
-    res
+    res.send({ success: 'true' })
 }
