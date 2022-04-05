@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose')
 const {Schema} = mongoose;
 
 //define our model
@@ -8,7 +8,7 @@ const userSchema = new Schema({
 })
 
 //create the model class
-export const ModelClass = mongoose.model('user', userSchema);
+const ModelClass = mongoose.model('user', userSchema);
 
 //export the model
-//export default ModelClass
+module.exports = ModelClass;

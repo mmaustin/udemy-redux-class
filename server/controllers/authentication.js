@@ -1,6 +1,11 @@
-exports.signup = function(req, res, next) {
-    //see if a user with the given email exists
+const User = require('../models/user')
 
+exports.signup = function(req, res, next) {
+    //req.body means anything contained within the post request
+    const email = req.body.email
+    const password = req.body.email
+    //see if a user with the given email exists
+    User.findOne({email: email}, ()=>{err, existingUser})
 
     //return error, if a user with email does exist
 
